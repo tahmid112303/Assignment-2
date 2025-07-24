@@ -27,6 +27,36 @@ body{
     color: black;
 }
 
+.flower-box{
+    display: flex;
+    gap: 0;
+    margin: 120px 150px;
+}
+
+.flower-detail{
+    width: 50%;
+    margin-top: 162px;
+}
+
+.flower-detail h2{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.flower-detail p{
+    font-size: 22px;
+}
+
+.flower-pic{
+    width: 50%;
+    margin-top: 100px;
+}
+
+.flower-pic img{
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 576px) {
     .navlink{
         visibility: hidden;
@@ -36,5 +66,28 @@ body{
         justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .flower-pic img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .flower-pic{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .flower-detail{
+        margin-top: 5px;
+    }
+    .flower-box{
+        margin-left: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .flower-detail h2{
+        font-size: 24px;
+    }
+    .flower-detail p{
+        font-size: 14px;
     }
 }
