@@ -113,6 +113,58 @@ body{
     cursor: pointer;
 }
 
+#trusted-badge{
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    margin-bottom: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trusted-badge img{
+    height: 220px;
+    width: 220px;
+    margin-left: -200px;
+    z-index: 1;
+}
+
+.plant-lover{
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.plant-lover-img{
+    width: 100%;
+    height: 100%;
+}
+
+.plant-lover-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.plant-lover-title{
+    margin-right: 0;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+.plant-lover-title h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0%;
+}
+
+.plant-lover-title ul li{
+    font-size: 22px;
+    color: gray;
+}
+
 @media screen and (max-width: 576px) {
     .navlink{
         visibility: hidden;
@@ -155,5 +207,25 @@ body{
         margin-top: 50px;
         justify-items: center;
         column-gap: 5px;
+    }
+    .plant-lover{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .plant-lover-img{
+        width: 100%;
+    }
+    .plant-lover-img img{
+        width: 100%;
+    }
+    #trusted-badge img{
+        display: none;
+    }
+    .plant-lover-title ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
