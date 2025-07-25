@@ -124,6 +124,7 @@ body{
 }
 
 #trusted-badge img{
+    cursor: pointer;
     height: 220px;
     width: 220px;
     margin-left: -200px;
@@ -164,6 +165,51 @@ body{
     font-size: 22px;
     color: gray;
 }
+
+.deal{
+    margin-top: 130px;
+    text-align: center;
+}
+
+.deal h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.deal-section p{
+    font-size: 22px;
+}
+
+.three-img-section{
+    display: flex;
+    margin: 120px 140px;
+    justify-content: space-between;
+    padding-bottom: 0%;
+}
+
+.two-img{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    gap: 25px;
+}
+
+.two-img img{
+    border-radius: 14px;
+}
+
+.one-img{
+    width: 60%;
+}
+
+.one-img img{
+    width: 100%;
+    height: 423.13px;
+    border-radius: 14px;
+}
+
 
 @media screen and (max-width: 576px) {
     .navlink{
@@ -208,24 +254,43 @@ body{
         justify-items: center;
         column-gap: 5px;
     }
-    .plant-lover{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .plant-lover-img{
+    .plant-lover {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0; /* REMOVE large margin-bottom */
+      }
+      .plant-lover-img {
         width: 100%;
-    }
-    .plant-lover-img img{
+        /* REMOVE display: flex; flex-direction: column; */
+        /* REMOVE height: 100%; */
+        margin-bottom: 10px; /* optional spacing */
+      }
+      .plant-lover-title ul li{
+        font-size: xx-small;
+        text-wrap:  wrap;
+        max-height: 600px;
+      }
+
+      .deals-plant-image{
+        margin: 100px;
+        max-width: 500px;
+        max-width: 700px;
+      }
+      .plant-lover-img img {
         width: 100%;
-    }
+        height: auto; /* IMPORTANT: maintain aspect ratio */
+      }
     #trusted-badge img{
         display: none;
     }
-    .plant-lover-title ul{
+    .plant-lover-title {
+        margin-bottom: 0; 
+      }
+
+      .three-img-section{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-    }
+      }
 }
