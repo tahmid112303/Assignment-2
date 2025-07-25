@@ -177,7 +177,7 @@ body{
     margin-bottom: 15px;
 }
 
-.deal-section p{
+.deal p{
     font-size: 22px;
 }
 
@@ -271,16 +271,21 @@ body{
         font-size: xx-small;
         text-wrap:  wrap;
         max-height: 600px;
+        overflow-y: hidden;
       }
 
       .deals-plant-image{
-        margin: 100px;
+        display: flex;
+        flex-direction: column;
+    
+        margin: 200px 20px;
         max-width: 500px;
         max-width: 700px;
+        
       }
       .plant-lover-img img {
         width: 100%;
-        height: auto; /* IMPORTANT: maintain aspect ratio */
+        height: auto; 
       }
     #trusted-badge img{
         display: none;
@@ -288,6 +293,7 @@ body{
     .plant-lover-title {
         margin-bottom: 0; 
       }
+
 
       .three-img-section{
         display: flex;
