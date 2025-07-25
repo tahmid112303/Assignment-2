@@ -129,6 +129,11 @@ body{
     width: 220px;
     margin-left: -200px;
     z-index: 1;
+    animation: move 5s infinite;
+}
+
+@keyframes move{
+    100% {transform: rotate(360deg);}
 }
 
 .plant-lover{
@@ -267,6 +272,7 @@ body{
     text-wrap: wrap;
     margin-left: 50px;
     font-size: 22px;
+    margin-right: 110px;
 }
 .footer-menu{
     width: 35%;
@@ -337,6 +343,9 @@ body{
     .plants{
         margin: 50px 5px;
     }
+    .plant-title h1{
+        font-size: 24px;
+    }
     .plant-img-container{
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
@@ -351,11 +360,14 @@ body{
         margin-right: 10px;
         margin-bottom: 0; /* REMOVE large margin-bottom */
       }
-      .plant-lover-img {
+    .plant-lover-img {
         width: 100%;
         /* REMOVE display: flex; flex-direction: column; */
         /* REMOVE height: 100%; */
         margin-bottom: 10px; /* optional spacing */
+      }
+      .plant-lover-title h2{
+        font-size: 24px;
       }
       .plant-lover-title ul li{
         font-size: 12px;
@@ -422,6 +434,8 @@ body{
       }
 
       .footer-logo h3{
+        text-wrap: nowrap;
+        margin-right: 20px;
         margin-left: 50px;
         margin-top: 50px;
         font-size: 16px;
