@@ -222,11 +222,11 @@ body{
         padding-right: 10px;
     }
     .flower-pic img{
-        width: 100%;
+        width: auto;
         margin-bottom: 10px;
     }
     .flower-pic{
-        width: 100%;
+        width: auto;
         margin-top: 5px;
     }
     .flower-detail{
@@ -268,7 +268,7 @@ body{
         margin-bottom: 10px; /* optional spacing */
       }
       .plant-lover-title ul li{
-        font-size: xx-small;
+        font-size: 12px;
         text-wrap:  wrap;
         max-height: 600px;
         overflow-y: hidden;
@@ -277,11 +277,7 @@ body{
       .deals-plant-image{
         display: flex;
         flex-direction: column;
-    
         margin: 200px 20px;
-        max-width: 500px;
-        max-width: 700px;
-        
       }
       .plant-lover-img img {
         width: 100%;
@@ -290,13 +286,33 @@ body{
     #trusted-badge img{
         display: none;
     }
-    .plant-lover-title {
-        margin-bottom: 0; 
+
+
+      .deal h1{
+        font-size: 25px;
+        font-weight: bold;
       }
 
+      .deal p{
+        font-size: 14px;
+      }
 
-      .three-img-section{
+    .three-img-section{
+        margin-left: 0%;
         display: flex;
         flex-direction: column;
+        width: 100%;
+      }
+
+      .two-img{
+        gap: 0;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .one-img img{
+        width: 450px;
+        height: 250px;
       }
 }
